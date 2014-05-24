@@ -8,6 +8,7 @@ sudo apt-get install k3b -y
 sudo apt-get install curl -y
 sudo apt-get install gtk-recordmydesktop -y
 sudo apt-get install screenkey -y
+sudo apt-get install msttcorefonts -y
 
 # TeamViewer
 #wget http://download.teamviewer.com/download/teamviewer_linux_x64.deb
