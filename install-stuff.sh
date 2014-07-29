@@ -98,4 +98,4 @@ sudo apt-get install libdvdread4 -y
 sudo /usr/share/doc/libdvdread4/install-css.sh
 sudo apt-get install xdotool -y
 sudo apt-get install curl -y
-
+sudo apt-get install vim -y
