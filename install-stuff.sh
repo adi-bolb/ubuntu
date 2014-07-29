@@ -1,97 +1,101 @@
 #!/bin/bash
 
-#Desktop
+# Laptop overheating
+#http://www.webupd8.org/2014/04/prevent-your-laptop-from-overheating.html
+
+# PPA
+
+#sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+#sudo add-apt-repository ppa:weather-indicator-team/ppa
+#sudo add-apt-repository ppa:conscioususer/polly-daily
+#sudo add-apt-repository ppa:jonoomph/openshot-edge 
+#sudo add-apt-repository ppa:albertomilone/hamster-indicator
+#sudo add-apt-repository ppa:atareao/atareao
+#sudo add-apt-repository ppa:linrunner/tlp
+#sudo add-apt-repository ppa:webupd8team/java
+
+sudo apt-get update
+
+sudo apt-get install oracle-java7-installer
+sudo apt-get install linux-firmware-nonfree -y
 sudo apt-get install gnome-commander -y
-sudo apt-get install transmission -y
-sudo apt-get install gparted -y
-sudo apt-get install k3b -y
-sudo apt-get install curl -y
-sudo apt-get install gtk-recordmydesktop -y
-sudo apt-get install screenkey -y
-sudo apt-get install msttcorefonts -y
-
-# TeamViewer
-#wget http://download.teamviewer.com/download/teamviewer_linux_x64.deb
-#sudo dpkg --install teamviewer_linux_x64.deb -f -y
-#rm teamviewer_linux_x64.deb
-
-#Software Development
-sudo apt-get install eclipse -y
-sudo apt-get install git -y
-sudo apt-get install hamster-indicator -y
-sudo add-apt-repository ppa:webupd8team/java -y
-sudo apt-get update
-sudo apt-get install oracle-jdk7-installer -y
-sudo apt-get install php5-cli -y
-sudo apt-get install maven -y
-#wget http://www.truecrypt.org/download/truecrypt-7.1a-linux-x64.tar.gz
-#tar xvf truecrypt-7.1a-linux-x64.tar.gz
-#sudo mv truecrypt-7.1a-setup-x64 /opt/truecrypt
-#rm truecrypt-7.1a-linux-x64.tar.gz
-sudo apt-get install gpa seahorse -y
-
-#Editors
-sudo apt-get install vim -y
-sudo apt-get install nano -y
-#wget http://download.jetbrains.com/idea/ideaIU-13.1.1.tar.gz
-#tar xvf ideaIU-13.1.1.tar.gz
-#sudo mv idea-IU-135.480 /opt/ideaIU-13.1.1
-#rm ideaIU-13.1.1.tar.gz
-
-#System
-sudo apt-get install python-pip build-essential python-dev -y
-sudo pip install Glances
-sudo pip install PySensors
-
-#Media
-sudo apt-get install vlc -y
-sudo apt-get install openshot -y
-sudo apt-get install inkscape -y
-sudo apt-get install gimp -y
-sudo apt-get install audacious -y
-sudo apt-get install mplayer -y
-sudo apt-get install winff -y
-
-#Web
-sudo apt-get install gimp -y
-sudo apt-get install polly -y
-sudo apt-get install flash-plugin-installer -y
-sudo apt-get install chromium-browser -y
-sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
-sudo apt-get update
 sudo apt-get install skype -y
+sudo apt-get install gimp -y
+sudo apt-get install k3b -y
+sudo apt-get install xfburn -y
+sudo apt-get install inkscape -y
+sudo apt-get install monodevelop -y
+sudo apt-get install mono-complete -y
+sudo apt-get install libav-tools -y
+sudo apt-get install pidgin -y
+sudo apt-get install indicator-weather -y
 
-#Games
-sudo apt-get install hedgewars -y
+#sudo wget http://download.virtualbox.org/virtualbox/4.2.0/virtualbox-4.2_4.2.0-80737~Ubuntu~precise_i386.deb
+#sudo dpkg -i virtualbox-4.2_4.2.0-80737~Ubuntu~precise_i386.deb
+#sudo rm virtualbox-4.2_4.2.0-80737~Ubuntu~precise_i386.deb
 
-#Wine
+sudo apt-get install alarm-clock -y
 sudo apt-get install wine -y
-sudo add-apt-repository ppa:ubuntu-wine/ppa -y
-sudo apt-get update -y
-sudo apt-get install wine1.6 winetricks -y
+sudo apt-get install eclipse-platform -y
+sudo apt-get install eclipse-jdt -y
+sudo apt-get install eclipse-cdt -y
+sudo apt-get install maven -y
+sudo apt-get install eclipse -y
+sudo apt-get install netbeans -y
+sudo apt-get install kdevelop -y
+sudo apt-get install kdevelop-php -y
+sudo apt-get install geany -y
+sudo apt-get install idle-python2.7 -y
+sudo apt-get install idle-python3.2 -y
+sudo apt-get install chromium-browser -y
+sudo apt-get install hotot -y
+sudo apt-get install choqok -y
+sudo apt-get install polly -y
+sudo apt-get install vlc-nox -y
+sudo apt-get install vlc -y
+sudo apt-get install cheese -y
+sudo apt-get install audacity -y
+sudo apt-get install audacious -y
+sudo apt-get install scribus -y
+sudo apt-get install git -y
 
-#Amazon
-sudo apt-get remove unity-lens-shopping -y
-sudo apt-get remove unity-scope-video-remote -y
-sudo apt-get remove unity-scope-musicstores -y
+#sudo wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list && sudo apt-get --quiet update && sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring && sudo apt-get --quiet update
 
-#Codecs
-sudo apt-get install ubuntu-restricted-extras -y
+sudo apt-get install non-free-codecs libxine1-ffmpeg gxine mencoder totem-mozilla icedax tagtool easytag id3tool lame nautilus-script-audio-convert libmad0 mpg321 mpg123 libjpeg-progs  -y
+sudo apt-get install libdvdcss2  -y && sudo /usr/share/doc/libdvdread4/./install-css.sh  -y
+sudo apt-get install openshot openshot-doc -y
+sudo apt-get remove flashplugin-* --purge 
+sudo apt-get install flashplugin-nonfree-extrasound  -y
+sudo apt-get install unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack lha arj cabextract file-roller
+sudo apt-get install filezilla -y
+sudo apt-get install samba samba-common -y
+sudo apt-get install python-glade2 -y
+sudo apt-get install system-config-samba -y
+sudo apt-get install non-free-codecs libxine1-ffmpeg gxine mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview flac libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 ffmpeg icedax tagtool easytag id3tool lame nautilus-script-audio-convert libmad0 libjpeg-progs
 
-#Virtual Machines
+sudo wget http://archive.getdeb.net/install_deb/playdeb_0.3-1~getdeb1_all.deb
+sudo dpkg -i playdeb_0.3-1~getdeb1_all.deb
+sudo rm playdeb_0.3-1~getdeb1_all.deb
 
-#VirtualBox for Ubuntu 13.04
-#wget http://download.virtualbox.org/virtualbox/4.3.4/virtualbox-4.3_4.3.4-91027~Ubuntu~raring_i386.deb
-#sudo dpkg --install virtualbox-4.3_4.3.4-91027~Ubuntu~raring_i386.deb
-#rm virtualbox-4.3_4.3.4-91027~Ubuntu~raring_i386.deb
+sudo apt-get install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon -y
+sudo apt-get install gparted ntfsprogs menu ntfs-config  -y
+sudo apt-get install dia -y
+sudo apt-get install conky-all -y
+sudo apt-get install alarm-clock-applet -y
+sudo apt-get install mysql-workbench -y
+sudo apt-get install hamster-indicator -y
+sudo apt-get install synaptic dconf-tools gksu gdebi lxkeymap leafpad -y
+sudo apt-get install gnome-session-flashback -y
+sudo apt-get install my-weather-indicator -y
+sudo apt-get install indicator-cpufreq -y
+sudo apt-get install compizconfig-settings-manager -y
+sudo apt-get purge bumblebee*
+sudo apt-get install nvidia-prime -y
+sudo apt-get remove laptop-mode-tools
+sudo apt-get install tlp tlp-rdw -y
+sudo tlp start
+sudo apt-get install libdvdread4 -y
+sudo /usr/share/doc/libdvdread4/install-css.sh
+sudo apt-get install xdotool -y
+sudo apt-get install curl -y
 
-sudo apt-get install virtualbox
-#sudo adduser adi vboxusers
-
-# Install missing dependencies
-sudo apt-get install -f
-
-#Grails
-curl -s get.gvmtool.net | bash
-source "/home/adi/.gvm/bin/gvm-init.sh"
-gvm install grails 2.2.4 -y
